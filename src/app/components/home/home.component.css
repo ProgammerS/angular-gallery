@@ -1,0 +1,32 @@
+.home-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px 30px;
+    background: linear-gradient(145deg, #1f1f1f, #2e2e2e); /* Subtle gradient for a sleek dark mode */
+    color: #e6e6e6; /* Light text for good readability */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.home-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.5);
+}
+
+.header h1 {
+    font-size: 2.8em;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+.header p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #d6d6d6;
+    font-weight: 300;
+}

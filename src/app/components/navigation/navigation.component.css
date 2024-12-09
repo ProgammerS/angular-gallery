@@ -1,0 +1,55 @@
+/* Navbar Styling */
+.navbar {
+  background-color: #1e1e2f; /* Darker, neutral background for a professional look */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle, sharper shadow for depth */
+  position: sticky;
+  top: 0; /* Stick the navbar to the top */
+  z-index: 100;
+  border-bottom: 1px solid #333; /* Thin border for structure */
+}
+
+/* Navbar Links Styling */
+.nav-link {
+  color: #dcdde1; /* Softer light gray for elegance */
+  text-decoration: none;
+  font-size: 1.2em; /* Slightly larger text for better readability */
+  margin: 0 15px; /* Space out the links */
+  padding: 10px 20px;
+  border-radius: 5px; /* Subtle rounded corners for a modern feel */
+  font-weight: 500; /* Medium font weight for clear legibility */
+  transition: background-color 0.3s, transform 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* Hover Effect */
+.nav-link:hover {
+  background-color: #4ecca3; /* Fresh green for a professional pop of color */
+  color: #1e1e2f; /* Dark text for contrast on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Active Link Styling */
+.nav-link.router-link-active {
+  background-color: #38a089; /* Deeper green for active state */
+  color: white;
+  font-weight: bold; /* Highlight the active link with bold text */
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px;
+  }
+
+  .nav-link {
+      margin: 10px 0;
+      padding: 8px 16px;
+      width: 100%; /* Make the links full width on smaller screens */
+      text-align: left; /* Align links to the left */
+  }
+}

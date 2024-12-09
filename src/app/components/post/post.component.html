@@ -1,0 +1,17 @@
+<div class="gallery-container">
+  <h2>Random Image Gallery</h2>
+  <p class="gallery-description">
+      Explore a collection of randomly fetched images. Click "Load More" to add new images to the gallery.
+  </p>
+
+  <div class="image-grid">
+      <div class="image-item" *ngFor="let image of imageUrls">
+          <img style="border-radius: 20px;" [src]="image" alt="Random Image" class="random-image">
+      </div>
+  </div>
+
+  <!-- Load More Button -->
+  <div class="load-more-container">
+      <button class="load-more-btn" (click)="loadMoreImages()">Load More Images</button>
+  </div>
+</div>
